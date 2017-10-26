@@ -32,7 +32,10 @@ export class DiagramComponent implements OnInit {
             {
               name: 'author',
               type: 'string',
-              link: null
+              link: {
+                to: 'author',
+                type: DiagramLinkType.ManyToMany
+              }
             }
           ]
         },
